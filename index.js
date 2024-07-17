@@ -1,0 +1,32 @@
+let prices=document.querySelector("#price");
+let CDPs=document.querySelector("#CDP");
+let LCs=document.querySelector("#LC");
+let ROIs=document.querySelector("#ROI");
+let Times=document.querySelector("#Time");
+let rate=document.querySelector("#rate");
+let EMIs=document.querySelector('#EMI');
+function Calculate(){
+    let price=Number(prices.value);
+    let CDP=Number(CDPs.value);
+    let LC=Number(LCs.value);
+    let ROI=Number(ROIs.value);
+    let Time=Number(Times.value);
+    let DP=CDP-LC;
+let month=Time*12;
+let LA=price-DP;
+// console.log('lone amount',LA);
+let SI=(LA*ROI*Time)/100;
+// console.log("Interest",SI);
+let EMI=Math.round((SI+LA)/month);
+// console.log("EMI",EMI)
+let mainSI=SI+LC;
+// console.log("Main SI",mainSI);
+let mainLA=price-CDP;
+// console.log("main lone amount",mainLA);
+let mainROI=(mainSI*100)/(mainLA*Time);
+// console.log("main ROI",mainROI);
+let mainEMI=Math.round((mainSI+mainLA)/month);
+// console.log("main EMI",mainEMI);
+rate.innerHTML=mainROI;
+EMIs.innerHTML=mainEMI;
+};
