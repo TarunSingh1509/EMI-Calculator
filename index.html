@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="input">
-            <input id="price" type="number" placeholder="Bike Price"><br>
-            <input id="CDP"  type="number" placeholder="CDP" ><br>
-            <input id="LC" type="number" placeholder="LC" ><br>
-            <input id="ROI"  type="number" placeholder="ROI" ><br>
-            <input id="Time" type="number" placeholder="Time" ><br>
-            <button onclick="Calculate()" >Get EMI</button>
-        </div>
-        <div id="output">
-            <span class="output">
-                Rate Of Interest
-                <span id="rate"></span>
-            </span><br>
-            <span class="output">
-                EMI
-                <span id="EMI"></span>
-            </span>
+    <div class="container">
+        <div class="main">
+            <div class="input">
+                <input id="price" type="number" placeholder="Bike Price"><br>
+                <input id="CDP"  type="number" placeholder="CDP" ><br>
+                <input id="LC" type="number" placeholder="LC" ><br>
+                <input id="ROI"  type="number" placeholder="ROI" ><br>
+                <input id="Time" type="number" placeholder="Time" ><br>
+                <button onclick="Calculate()" >Get EMI</button>
+            </div>
+            <div id="output">
+                <span class="output">
+                    Rate Of Interest -&nbsp
+                    <span id="rate"></span>
+                </span><br>
+                <span class="output">
+                    EMI -&nbsp
+                    <span id="EMI"></span>
+                </span>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>

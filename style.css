@@ -4,8 +4,41 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
-.main{
+.container{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg,#153677,#4e085f);
+}
+.main{
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+.input{
+    padding: 10px;
+    bottom: 5px;
+}
+input{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border-color: black;
+}
+button{
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #153677;
+    color: white;
+}
+#output{
+    position: relative;
+    top: 40px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
